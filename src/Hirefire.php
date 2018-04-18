@@ -17,11 +17,6 @@ use yii\base\Event;
 class Hirefire extends Plugin
 {
     /**
-     * @var string
-     */
-    public $controllerNamespace = 'nerdsandcompany\hirefire\controllers';
-
-    /**
      * Register site route.
      */
     public function init()
@@ -32,7 +27,7 @@ class Hirefire extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_SITE_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['hirefire/<token:(.*?)>/info'] = 'hirefire/queue';
+                $event->rules['hirefire/<token>/info'] = 'hirefire/info';
             }
         );
     }

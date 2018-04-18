@@ -3,8 +3,9 @@
 namespace nerdsandcompany\hirefire\controllers;
 
 use Craft;
-use yii\base\UserException;
 use craft\web\Controller;
+use yii\base\UserException;
+use yii\web\Response;
 
 /**
  * @author    Nerds & Company
@@ -13,7 +14,7 @@ use craft\web\Controller;
  *
  * @see      https://nerds.company
  */
-class Queue extends Controller
+class InfoController extends Controller
 {
     /**
      * @var bool
@@ -21,17 +22,15 @@ class Queue extends Controller
     public $allowAnonymous = true;
 
     /**
-     * @param array $variables
+     * @param string $token
      *
-     * @return \yii\web\Response
+     * @return Response
      */
-    public function actionIndex(array $variables = [])
+    public function actionIndex(string $token): Response
     {
-        $this->requireAcceptsJson();
-
         // Verify hirefire token
-        if ($variables['token'] != getenv('HIREFIRE_TOKEN')) {
-            throw new UserException(Craft::t('Invalid Hirefire token.'));
+        if ($token != getenv('HIREFIRE_TOKEN')) {
+            throw new UserException(Craft::t('hirefire', 'Invalid Hirefire token.'));
         }
 
         // Return pending queue for worker
