@@ -14,6 +14,10 @@ This will add `nerds-and-company/craft-hirefire` as a requirement to your  proje
 
 Hirefire is now available as an installable plugin in Craft. You can install it in the cp or use `./craft install/plugin hirefire`
 
+## Usage
+
+See https://help.hirefire.io/guides/hirefire/job-queue-any-programming-language on how Hirefire works with job queues. This plugin will use the `HIREFIRE_TOKEN` environment variable for authentication, so Hirefire can query your site for pending jobs. When one or more pending jobs are found, Hirefire will start a worker untill all jobs are done.
+
 ## License
 
 This project has been licensed under the MIT License (MIT). Please see [License File](LICENSE) for more information.
