@@ -22,6 +22,8 @@ class Queue extends Controller
 
     /**
      * @param array $variables
+     *
+     * @return \yii\web\Response
      */
     public function actionIndex(array $variables = [])
     {
@@ -33,7 +35,7 @@ class Queue extends Controller
         }
 
         // Return pending queue for worker
-        $this->asJson([[
+        return $this->asJson([[
             'name' => 'worker',
             'quantity' => Craft::$app->queue->getTotalWaiting(),
         ]]);
