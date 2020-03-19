@@ -36,7 +36,7 @@ class InfoController extends Controller
         // Return pending queue for worker
         return $this->asJson([[
             'name' => 'worker',
-            'quantity' => Craft::$app->queue->getTotalWaiting(),
+            'quantity' => Craft::$app->queue->getTotalJobs(),
         ]]);
     }
 }

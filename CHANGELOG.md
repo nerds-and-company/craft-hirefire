@@ -1,3 +1,7 @@
+## 1.0.1 - 2020-03-19
+### Fixed
+- Take all jobs into account, not only pending jobs
+
 ## 1.0.0 - 2018-04-18
 ### Added
 - Initial release
