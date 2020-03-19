@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "nerds-and-company/craft-hirefire",
     "description": "Hirefire.io worker scheduler for Craft 3 queue jobs",
     "type": "craft-plugin",
