@@ -33,10 +33,12 @@ class InfoController extends Controller
             throw new UserException(Craft::t('hirefire', 'Invalid Hirefire token.'));
         }
 
+        $queue = Craft::$app->queue;
+
         // Return pending queue for worker
         return $this->asJson([[
             'name' => 'worker',
-            'quantity' => Craft::$app->queue->getTotalJobs(),
+            'quantity' => $queue->getTotalJobs() - $queue->getTotalFailed(),
         ]]);
     }
 }
