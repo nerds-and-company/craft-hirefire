@@ -1,6 +1,10 @@
-## 1.0.2 - 2021-05-06
+## 1.0.3 - 2021-05-06
 ### Fixed
 - Don't take failed jobs into account
+
+## 1.0.2 - 2021-03-04
+### Added
+- Added PHP8 support
 
 ## 1.0.1 - 2020-03-19
 ### Fixed
