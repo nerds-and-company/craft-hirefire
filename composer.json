@@ -1,5 +1,5 @@
 {
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "nerds-and-company/craft-hirefire",
     "description": "Hirefire.io worker scheduler for Craft 3 queue jobs",
     "type": "craft-plugin",
@@ -22,7 +22,7 @@
     },
     "require": {
         "php": "^7.0 || ^8.0",
-        "craftcms/cms": "^3.0"
+        "craftcms/cms": "^3.0 || ^4.0"
     },
     "autoload": {
         "psr-4": {
