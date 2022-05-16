@@ -1,3 +1,7 @@
+## 1.0.4 - 2022-05-16
+### Added
+- Added Craft 4 support
+
 ## 1.0.3 - 2021-05-06
 ### Fixed
 - Don't take failed jobs into account
