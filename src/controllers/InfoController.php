@@ -19,7 +19,7 @@ class InfoController extends Controller
     /**
      * @var bool
      */
-    public $allowAnonymous = true;
+    public array|bool|int $allowAnonymous = true;
 
     /**
      * @param string $token

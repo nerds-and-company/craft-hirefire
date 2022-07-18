@@ -1,6 +1,6 @@
-# Hirefire (for Craft 3)
+# Hirefire (for Craft 4)
 
-Hirefire.io worker scheduler for Craft 3 queue jobs
+Hirefire.io worker scheduler for Craft 4 queue jobs
 
 ## Installation
 
