@@ -16,7 +16,7 @@ Hirefire is now available as an installable plugin in Craft. You can install it 
 
 ## Usage
 
-See https://help.hirefire.io/guides/hirefire/job-queue-any-programming-language on how Hirefire works with job queues. This plugin will use the `HIREFIRE_TOKEN` environment variable for authentication, so Hirefire can query your site for pending jobs. When one or more pending jobs are found, Hirefire will start a worker untill all jobs are done.
+See [help.hirefire.io](https://help.hirefire.io/article/52-job-queue-any-programming-language) on how Hirefire works with job queues. This plugin will use the `HIREFIRE_TOKEN` environment variable for authentication, so Hirefire can query your site for pending jobs. When one or more pending jobs are found, Hirefire will start a worker untill all jobs are done.
 
 ## License
 
