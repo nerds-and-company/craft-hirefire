@@ -1,7 +1,7 @@
 {
-    "version": "2.0.0",
+    "version": "3.0.0",
     "name": "nerds-and-company/craft-hirefire",
-    "description": "Hirefire.io worker scheduler for Craft 4 queue jobs",
+    "description": "Hirefire.io worker scheduler for Craft 5 queue jobs",
     "type": "craft-plugin",
     "license": "MIT",
     "authors": [{
@@ -21,8 +21,8 @@
         "downloadUrl": "https://github.com/nerds-and-company/craft-hirefire/releases/latest"
     },
     "require": {
-        "php": "^8.0",
-        "craftcms/cms": "^4.0"
+        "php": "^8.2",
+        "craftcms/cms": "^5.0"
     },
     "autoload": {
         "psr-4": {
